@@ -18,8 +18,8 @@ var sauceLabsCapabilities = {
 var sauceLabsServer = "http://" + sauceLabsUsername + ":" + sauceLabsAccessKey + "@ondemand.saucelabs.com:80/wd/hub"
 
 // -----------BrowserStack Specific----------------------
-var browserStackUsername = $BROWSER_STACK_USERNAME
-var browserStackAccessKey = $BROWSER_STACK_ACCESS_KEY
+var browserStackUsername = process.env.BROWSER_STACK_USERNAME
+var browserStackAccessKey = process.env.BROWSER_STACK_ACCESS_KEY
 
 var browserStackCapabilities = {
   'browserName' : 'chrome',
