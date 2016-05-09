@@ -22,7 +22,7 @@ var browserStackUsername = process.env.BROWSER_STACK_USERNAME
 var browserStackAccessKey = process.env.BROWSER_STACK_ACCESS_KEY
 
 var browserStackCapabilities = {
-  'browserName' : 'chrome',
+  'browserName' : 'internet explorer',
   'os' : 'Windows',
   'os_version' : 'XP',
   'browserstack.user': browserStackUsername,
