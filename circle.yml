@@ -14,6 +14,9 @@ stages:
         name: Install Dependencies
         command: npm install
       - type: shell
+        name: Install 3rd Party Libs for Cypress
+        command: apt-get install xvfb libgtk2.0-0 libnotify-dev libgconf-2-4 libnss3 libxss1
+      - type: shell
         name: Install Cypress CLI Tools
         command: npm install -g cypress-cli
       - type: shell
