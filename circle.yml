@@ -6,6 +6,7 @@ stages:
   build:
     workDir: /home/ubuntu/demo-react-working
     steps:
+      - type: checkout
       - type: shell
         name: Pre-Dep
         command: mkdir /home/ubuntu/artifacts
